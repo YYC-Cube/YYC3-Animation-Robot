@@ -1,0 +1,56 @@
+{
+  "project": "yyc3-animation-robot",
+  "timestamp": "2026-05-19T19:31:45.831481",
+  "tech_stack": {
+    "framework": "Next.js 15.5.18",
+    "ui_library": "React 19 + shadcn/ui",
+    "styling": "Tailwind CSS v4",
+    "language": "TypeScript 5.9.3",
+    "package_manager": "pnpm 10.33.0",
+    "runtime": "Node.js 22",
+    "3d_engine": "Spline 4.1.0",
+    "animation": "Framer Motion 12.38.0"
+  },
+  "checks": {
+    "package_name": {
+      "expected": "yyc3-animation-robot",
+      "actual": "yyc3-animation-robot",
+      "pass": true
+    },
+    "typescript_strict": {
+      "pass": true,
+      "value": true
+    },
+    "nvmrc": {
+      "pass": true,
+      "path": "/Volumes/Max/动画交互机器人/.nvmrc"
+    },
+    "env_protected": {
+      "pass": true,
+      "has_env_local": false
+    },
+    "doc_README.md": {
+      "pass": true,
+      "path": "/Volumes/Max/动画交互机器人/README.md"
+    },
+    "doc_CHANGELOG.md": {
+      "pass": true,
+      "path": "/Volumes/Max/动画交互机器人/CHANGELOG.md"
+    },
+    "doc_CONTRIBUTING.md": {
+      "pass": true,
+      "path": "/Volumes/Max/动画交互机器人/CONTRIBUTING.md"
+    },
+    "doc_ROADMAP.md": {
+      "pass": true,
+      "path": "/Volumes/Max/动画交互机器人/ROADMAP.md"
+    },
+    "doc_.env.example": {
+      "pass": true,
+      "path": "/Volumes/Max/动画交互机器人/.env.example"
+    },
+    "no_ignore_build_errors": {
+      "pass": true
+    }
+  }
+}

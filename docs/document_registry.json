@@ -1,0 +1,37 @@
+{
+  "export_time": "2026-05-19T19:31:45.832349",
+  "project": "yyc3-animation-robot",
+  "project_version": "0.1.0",
+  "total_documents": 2,
+  "documents": {
+    "audit_report": {
+      "file_name": "00-项目现状审核报告.md",
+      "description": "YanYuCloudCube™ 动画交互机器人 全局全链路深度分析审核报告",
+      "version": "v3.0.1",
+      "checksum": "5ce2d34fbeba77cc",
+      "tags": [
+        "audit",
+        "analysis",
+        "baseline"
+      ],
+      "related_docs": [
+        "01-建议规划实施方案.md"
+      ]
+    },
+    "implementation_plan": {
+      "file_name": "01-建议规划实施方案.md",
+      "description": "YanYuCloudCube™ 动画交互机器人 建议规划实施方案",
+      "version": "v3.0.1",
+      "checksum": "4b67fdf553ab52d8",
+      "tags": [
+        "planning",
+        "implementation",
+        "roadmap"
+      ],
+      "related_docs": [
+        "00-项目现状审核报告.md"
+      ]
+    }
+  },
+  "traceability_chain": []
+}

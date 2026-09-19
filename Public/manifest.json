@@ -1,0 +1,39 @@
+{
+  "name": "YanYuCloudCube™ · YYC³ 动画交互机器人",
+  "short_name": "YYC³ Robot",
+  "description": "言启千行代码，语枢万物智能 — 基于五维驱动框架的智能动画交互平台",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/yyc3-icons/Web%20App/android-chrome-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/yyc3-icons/Web%20App/android-chrome-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/yyc3-icons/Web%20App/android-chrome-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/yyc3-icons/Web%20App/android-chrome-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/yyc3-icons/Web%20App/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
