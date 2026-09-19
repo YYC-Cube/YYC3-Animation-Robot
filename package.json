@@ -2,6 +2,7 @@
   "name": "yyc3-animation-robot",
   "version": "0.2.0",
   "private": true,
+  "packageManager": "pnpm@10.33.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/YYC-Cube/YYC3-Animation-Robot.git"
