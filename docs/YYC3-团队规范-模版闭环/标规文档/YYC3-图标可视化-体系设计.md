@@ -20,13 +20,13 @@ repository: https://github.com/YYC-Cube/YYC3-Animation-Robot
 
 ## 一、设计目标 | Design Goals
 
-| 目标 | 说明 | 对应「五高」 |
-| ---- | ---- | ------------ |
-| 全端覆盖 | Android / Web / iOS / macOS / watchOS 五平台 32+ PNG | 高可用 |
-| 单一事实源 | `public/yyc3-icons/` 为唯一图标物理源，`yyc3-icons.ts` 为唯一逻辑源 | 高可扩展 |
-| 零断链 | index.html → manifest → 运行时注入 → CDN 回退四级兜底 | 高可用 |
-| 高清渲染 | 每个使用场景匹配 ≥1:1 物理像素尺寸，lanczos 缩放 | 高性能 |
-| 可观测 | 加载失败自动回退并保留调试路径，测试全覆盖 | 高智能 |
+| 目标　　　 | 说明　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　| 对应「五高」 |
+| ------------| ---------------------------------------------------------------------| --------------|
+| 全端覆盖　 | Android / Web / iOS / macOS / watchOS 五平台 32+ PNG　　　　　　　　| 高可用　　　 |
+| 单一事实源 | `public/yyc3-icons/` 为唯一图标物理源，`yyc3-icons.ts` 为唯一逻辑源 | 高可扩展　　 |
+| 零断链　　 | index.html → manifest → 运行时注入 → CDN 回退四级兜底　　　　　　　 | 高可用　　　 |
+| 高清渲染　 | 每个使用场景匹配 ≥1:1 物理像素尺寸，lanczos 缩放　　　　　　　　　　| 高性能　　　 |
+| 可观测　　 | 加载失败自动回退并保留调试路径，测试全覆盖　　　　　　　　　　　　　| 高智能　　　 |
 
 ## 二、图标资产总览 | Icon Assets
 
