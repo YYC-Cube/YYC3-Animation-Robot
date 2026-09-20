@@ -124,7 +124,7 @@ YanYuCloudCube™ (YYC³) 动画交互机器人 — 基于 Next.js 15 + Spline 3
 
 | 技术          | 版本     | 锁定方式     |
 | ------------- | -------- | ------------ |
-| Next.js       | 15.5.25  | package.json |
+| Next.js       | 16.3.5   | package.json |
 | React         | ^19.0.0  | package.json |
 | TypeScript    | ^5       | package.json |
 | Tailwind CSS  | ^4.1.9   | package.json |

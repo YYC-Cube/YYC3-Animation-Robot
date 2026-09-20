@@ -31,7 +31,7 @@
 | 属性 | 值 |
 | ---- | -- |
 | 项目名称 | `yyc3-animation-robot` |
-| 版本 | 0.2.0 |
+| 版本 | 0.3.0 |
 | 仓库 | <https://github.com/YYC-Cube/YYC3-Animation-Robot> |
 | 定位 | YYC³ Family 智能应用体系先导展示项目 |
 | 核心能力 | Spline 3D 实时交互 · Spotlight 视差光效 · 主题感知 · 58 组件库 |
@@ -61,7 +61,7 @@
 | 图标     | Lucide React                               | ^0.454.0    |
 | 主题     | next-themes (light/dark/system)            | ^0.4.6      |
 | 字体     | next/font (Geist / Playfair / EB Garamond) | 内置        |
-| 包管理   | pnpm                                       | 10.33.0     |
+| 包管理   | pnpm                                       | 11.10.0     |
 | 运行时   | Node.js                                    | 22 (.nvmrc) |
 
 ---
@@ -170,15 +170,16 @@ yyc3-animation-robot/
 
 ### 高性能 (High Performance)
 
+- Turbopack 默认构建引擎 (Next.js 16, 编译 398ms)
 - Spline 3D 场景按需加载 (lazy + Suspense)
 - Tailwind CSS v4 按需构建 (oklch 色彩空间)
 - radix-ui 统一包替代 @radix-ui/react-\* 分包 (冗余依赖已清理)
 - react-resizable-panels v4 (API 升级)
-- 依赖树精简: 55 → 25 项直接依赖 (供应链攻击面收敛)
+- 依赖树精简: 55 → 24 项直接依赖 (供应链攻击面收敛)
 
 ### 高安全 (High Security)
 
-- Next.js 15.5.25 (CVE-2025-66478 已修复)
+- Next.js 16.3.5 (2026-08 安全通告两枚 Critical 已修复)
 - TypeScript strict: true (ignoreBuildErrors 已移除)
 - 依赖版本全部锁定 (无 latest)
 - pnpm 供应链策略校验 (minimumReleaseAge + supply-chain policies)

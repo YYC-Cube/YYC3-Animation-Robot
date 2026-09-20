@@ -155,8 +155,8 @@ export const metadata: Metadata = {
 
 | 层级 | 徽章 | shields.io 徽章值 | 颜色 | logo |
 | ---- | ---- | ----------------- | ---- | ---- |
-| L1 版本 | Version | `Version-0.2.0` | `6366f1` (靛蓝) | `semanticrelease` |
-| L2 技术栈 | Next.js | `Next.js-15.5` | `black` | `nextdotjs` |
+| L1 版本 | Version | `Version-0.3.0` | `6366f1` (靛蓝) | `semanticrelease` |
+| L2 技术栈 | Next.js | `Next.js-16.3` | `black` | `nextdotjs` |
 | L2 技术栈 | React | `React-19.3` | `087ea4` | `react` |
 | L2 技术栈 | TypeScript | `TypeScript-5.9_strict` | `3178c6` | `typescript` |
 | L2 技术栈 | Tailwind CSS | `Tailwind_CSS-v4.3` | `06b6d4` | `tailwindcss` |

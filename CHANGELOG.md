@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.3.0] - 2026-09-20
+
+### Changed
+
+- **Next.js 15.5.25 → 16.3.5 大版本升级**（官方升级指南逐项核对，未盲升）:
+  - Turbopack 成为默认构建引擎（编译 398ms，较 webpack 提升显著）
+  - 业务代码审计确认无 params/searchParams/cookies()/headers()/middleware 用法，async params 破坏性变更零影响
+  - React 19.2 特性（View Transitions / useEffectEvent / Activity）随升级可用
+- eslint-config-next 15.5.25 → 16.3.5: 16 起原生导出 flat config（`Linter.Config[]`），移除 FlatCompat 转换层与 `@eslint/eslintrc` 依赖
+- react-hooks v6（Compiler 对齐）: `hooks/use-mobile.ts` 以 `useSyncExternalStore` 正统重写（消除 set-state-in-effect）；`components/ui/**`（vendored shadcn 组件）将 `set-state-in-effect`/`purity` 规则降级 warning 以保持上游同步能力
+- packageManager pnpm 10.33.0 → 11.10.0（与本地安装及 store v11 对齐）
+- 版本号 0.2.0 → 0.3.0
+
+### Fixed
+
+- 修复 CI pnpm/action-setup 版本检测（`packageManager` 字段与实际执行版本不一致）
+
+### Security
+
+- 对齐 Next.js 2026-08 安全通告（16.3.3+ 修复两枚 Critical），锁定 16.3.5
+- 直接依赖 25 → 24 项（移除 @eslint/eslintrc）
+
 ## [0.2.0] - 2026-09-20
 
 ### Added

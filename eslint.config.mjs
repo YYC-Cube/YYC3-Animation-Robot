@@ -1,16 +1,10 @@
-import { dirname } from 'path'
-import { fileURLToPath } from 'url'
-import { FlatCompat } from '@eslint/eslintrc'
+import nextConfig from 'eslint-config-next'
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-})
-
+/**
+ * YYC³ Animation Robot — ESLint flat config
+ * eslint-config-next 16 起原生导出 flat config 数组（Linter.Config[]），无需 FlatCompat 转换。
+ */
 const eslintConfig = [
-  ...compat.extends('next/core-web-vitals', 'next/typescript'),
   {
     ignores: [
       'node_modules/**',
@@ -20,6 +14,16 @@ const eslintConfig = [
       'next-env.d.ts',
       'pnpm-lock.yaml',
     ],
+  },
+  ...nextConfig,
+  {
+    // vendored shadcn/ui 组件：保持与上游模板一致以便同步升级，
+    // react-hooks v6 Compiler 对齐规则（set-state-in-effect / purity）在上游适配前降级为 warning。
+    files: ['components/ui/**/*.tsx'],
+    rules: {
+      'react-hooks/set-state-in-effect': 'warn',
+      'react-hooks/purity': 'warn',
+    },
   },
 ]
 
