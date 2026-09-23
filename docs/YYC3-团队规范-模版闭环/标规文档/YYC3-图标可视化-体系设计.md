@@ -166,7 +166,7 @@ export const metadata: Metadata = {
 | L2 技术栈 | Node.js | `Node.js-22` | `339933` | `nodedotjs` |
 | L3 质量门禁 | Type Check | `TypeCheck-passing` | `brightgreen` | `typescript` |
 | L3 质量门禁 | Lint | `Lint-0_errors` | `brightgreen` | `eslint` |
-| L3 质量门禁 | Build | `Build-passing` | `brightgreen` | `vercel` |
+| L3 质量门禁 | Build | `Build-passing` | `brightgreen` | `githubactions` |
 | L4 治理 | Code Style | `Code_Style-Prettier` | `1a2b34` | `prettier` |
 | L4 治理 | License | `License-Private--YYC³` | `8A2BE2` | — |
 

@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.4.1] - 2026-09-24
+
+### Removed
+
+- **彻底移除 Vercel 相关内容** (决策性移除，部署方案回归 CI 五连门禁 + 自托管可选):
+  - 删除 `vercel.json` 部署配置与 `.github/workflows/deploy.yml` Vercel Deploy workflow
+  - 移除 `@vercel/analytics` 依赖 (package.json + lockfile) 与 `app/layout.tsx` 中的 `<Analytics />` 注入
+  - 清理 `.gitignore` 的 `.vercel` 条目与本地 `~/.vercel` 残留
+  - README/图标可视化规范中 Build 徽章 logo 由 vercel 改为 githubactions，移除部署闭环段落与结构图条目
+- 版本号 0.4.0 → 0.4.1
+
+### Changed
+
+- CI 保持五连门禁 (Typecheck / Lint / Build / Unit tests / E2e smoke) 作为唯一质量门禁，本地全量验证通过
+
 ## [0.4.0] - 2026-09-24
 
 ### Added

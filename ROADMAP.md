@@ -19,7 +19,7 @@ YanYuCloudCube™ (YYC³) 动画交互机器人 — 基于 Next.js 15 + Spline 3
 | 空间维 | 资源利用 | Tailwind v4 按需构建 + Spline 懒加载 + 字体本地化         |
 | 属性维 | 质量属性 | TypeScript 严格模式 + ESLint + Prettier + Error Boundary  |
 | 事件维 | 交互响应 | Spline 3D 实时交互 + Mouse Parallax + Spotlight           |
-| 关联维 | 生态集成 | Radix UI + Vercel Analytics + next-themes + YYC³ 复用模板 |
+| 关联维 | 生态集成 | Radix UI + next-themes + YYC³ 复用模板 (@yyc3/ui)       |
 
 ---
 
@@ -43,7 +43,7 @@ YanYuCloudCube™ (YYC³) 动画交互机器人 — 基于 Next.js 15 + Spline 3
 | 离线缓存   | next-pwa + Service Worker     | P1     |
 | 安装到桌面 | Web App Manifest + PWA Icons  | P1     |
 | 推送通知   | Web Push API + Notification   | P2     |
-| 性能监控   | Vercel Analytics + Web Vitals | P1     |
+| 性能监控   | Web Vitals (web-vitals 库)    | P1     |
 
 ### Phase 3 — 移动端适配增强
 
@@ -81,7 +81,7 @@ YanYuCloudCube™ (YYC³) 动画交互机器人 — 基于 Next.js 15 + Spline 3
 
 - [x] Error Boundary 包裹关键组件
 - [ ] 健康检查端点 (`/api/health`)
-- [ ] 负载均衡配置 (Vercel Edge)
+- [ ] 负载均衡配置 (自托管反向代理)
 - [ ] 降级策略 (Spline 不可用时的静态占位)
 
 ### 高性能 (High Performance)
@@ -139,10 +139,11 @@ YanYuCloudCube™ (YYC³) 动画交互机器人 — 基于 Next.js 15 + Spline 3
 
 | 平台     | 方案             | 域名                      | 状态   |
 | -------- | ---------------- | ------------------------- | ------ |
-| Vercel   | Git Push Auto    | yyc3-animation.vercel.app | 待部署 |
 | Docker   | Dockerfile       | 内网                      | 待构建 |
 | 静态导出 | next export      | CDN                       | 待评估 |
 | Electron | electron-builder | 桌面分发                  | 待开发 |
+
+> 注：Vercel 托管已于 v0.4.1 决策性移除（含 @vercel/analytics），后续部署以自托管 (Docker/静态导出) 为主。
 
 ---
 

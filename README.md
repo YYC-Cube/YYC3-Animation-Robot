@@ -4,7 +4,7 @@
 
 # YYC³ Animation Robot
 
-[![Version](https://img.shields.io/badge/Version-0.4.0-6366f1?logo=semanticrelease&logoColor=white)](https://github.com/YYC-Cube/YYC3-Animation-Robot/blob/main/CHANGELOG.md)
+[![Version](https://img.shields.io/badge/Version-0.4.1-6366f1?logo=semanticrelease&logoColor=white)](https://github.com/YYC-Cube/YYC3-Animation-Robot/blob/main/CHANGELOG.md)
 [![Next.js](https://img.shields.io/badge/Next.js-16.3-black?logo=nextdotjs&logoColor=white)](https://nextjs.org/docs)
 [![React](https://img.shields.io/badge/React-19.3-087ea4?logo=react&logoColor=white)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9_strict-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
@@ -15,7 +15,7 @@
 [![Node.js](https://img.shields.io/badge/Node.js-22-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org)
 [![Type Check](https://img.shields.io/badge/TypeCheck-passing-brightgreen?logo=typescript&logoColor=white)](https://github.com/YYC-Cube/YYC3-Animation-Robot/actions)
 [![Lint](https://img.shields.io/badge/Lint-0_errors-brightgreen?logo=eslint&logoColor=white)](https://github.com/YYC-Cube/YYC3-Animation-Robot/actions)
-[![Build](https://img.shields.io/badge/Build-passing-brightgreen?logo=vercel&logoColor=white)](https://github.com/YYC-Cube/YYC3-Animation-Robot/actions)
+[![Build](https://img.shields.io/badge/Build-passing-brightgreen?logo=githubactions&logoColor=white)](https://github.com/YYC-Cube/YYC3-Animation-Robot/actions)
 [![Tests](https://img.shields.io/badge/Tests-6+2_passing-brightgreen?logo=vitest&logoColor=white)](https://github.com/YYC-Cube/YYC3-Animation-Robot/actions)
 [![Code Style](https://img.shields.io/badge/Code_Style-Prettier-1a2b34?logo=prettier&logoColor=white)](https://prettier.io)
 [![License](https://img.shields.io/badge/License-Private--YYC%C2%B3-8A2BE2)](https://github.com/YYC-Cube/YYC3-Animation-Robot)
@@ -32,7 +32,7 @@
 | 属性 | 值 |
 | ---- | -- |
 | 项目名称 | `yyc3-animation-robot` |
-| 版本 | 0.4.0 |
+| 版本 | 0.4.1 |
 | 仓库 | <https://github.com/YYC-Cube/YYC3-Animation-Robot> |
 | 定位 | YYC³ Family 智能应用体系先导展示项目 |
 | 核心能力 | Spline 3D 实时交互 · Spotlight 视差光效 · 主题感知 · 58 组件库 |
@@ -149,7 +149,6 @@ yyc3-animation-robot/
 ├── pnpm-workspace.yaml         # workspace 声明 + 供应链策略
 ├── postcss.config.mjs          # PostCSS 配置
 ├── tsconfig.json               # TypeScript 严格模式 (@yyc3/ui/* 映射)
-├── vercel.json                 # Vercel 部署配置 (缓存头)
 ├── vitest.config.ts            # vitest 单测配置 (jsdom + 覆盖率)
 ├── CHANGELOG.md                # 变更日志
 ├── CONTRIBUTING.md             # 贡献指南
@@ -229,7 +228,6 @@ import { cn } from '@yyc3/ui/lib/utils'
 
 - **测试基线**: vitest 单测 (jsdom + @testing-library/react) + Playwright E2e 冒烟，覆盖率门禁 lines/functions ≥ 60%
 - **CI 五连门禁**: Typecheck / Lint / Build / Unit tests / E2e smoke (`.github/workflows/ci.yml`)
-- **部署闭环**: `vercel.json` 缓存策略 + Vercel Deploy workflow (配置 `VERCEL_TOKEN`/`VERCEL_ORG_ID`/`VERCEL_PROJECT_ID` secrets 后自动生效)
 
 ---
 
