@@ -2,8 +2,8 @@
 
 import type React from "react"
 
-import { SplineScene } from "@/components/ui/splite"
-import { Spotlight } from "@/components/ui/spotlight"
+import { SplineScene } from "@yyc3/ui/components/splite"
+import { Spotlight } from "@yyc3/ui/components/spotlight"
 import { ChevronDown } from "lucide-react"
 import { useState } from "react"
 

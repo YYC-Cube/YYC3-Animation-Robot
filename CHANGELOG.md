@@ -2,6 +2,36 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.4.0] - 2026-09-24
+
+### Added
+
+- **`@yyc3/ui` workspace 包化** (monorepo 组件库):
+  - 新增 `packages/ui/`，59 个 shadcn/ui 组件 + `lib/utils` + `hooks/use-mobile` 迁入包内，源码直出形态 (Turbopack 直接编译，无 build 产物)
+  - `pnpm-workspace.yaml` 声明 `packages/*`，主应用以 `workspace:*` 协议消费
+  - `next.config.mjs` 启用 `transpilePackages`; `tsconfig.json` 增加 `@yyc3/ui/*` 路径映射
+  - Tailwind v4 以 `@source '../packages/ui/src'` 扫描 workspace 包类名
+  - `components.json` aliases 对齐包路径 (shadcn CLI 保持可用)
+- **测试基线**:
+  - vitest 5 + @testing-library/react + jsdom 单测基线 (6 用例: cn 合并/冲突策略 + Button 变体渲染)
+  - Playwright e2e 冒烟基线 (2 用例: 首页品牌渲染 + favicon/manifest 注入)，webServer 自管理 (`next start -p 3011`)
+  - 覆盖率门禁 (v8 provider，lines/functions ≥ 60%)
+  - 新增脚本: `test` / `test:watch` / `test:coverage` / `test:e2e`
+- **部署闭环**:
+  - `vercel.json` (framework/install/build 命令 + manifest 与图标资源的 Cache-Control 头)
+  - `.github/workflows/deploy.yml` Vercel 生产部署 (secrets 软门控: 配置 VERCEL_TOKEN/ORG_ID/PROJECT_ID 后自动生效)
+
+### Changed
+
+- **接入 Next.js 16 `cacheComponents`** (Cache Components/PPR): 首页全静态预渲染 (3/3) 验证通过，为后续动态内容分段缓存奠定基础
+- CI 升级为五连门禁: Typecheck / Lint / Build / Unit tests / E2e smoke (含 Playwright chromium 安装步骤)
+- ESLint vendored 组件降级规则路径对齐 `packages/ui/src/components/**` (包化后路径迁移)
+- 版本号 0.3.0 → 0.4.0 (`@yyc3/ui` 同步 0.4.0)
+
+### Fixed
+
+- 修复 package.json 测试脚本丢失导致的 `pnpm test` 静默失败
+
 ## [0.3.0] - 2026-09-20
 
 ### Changed

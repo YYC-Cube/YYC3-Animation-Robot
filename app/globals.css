@@ -1,6 +1,9 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
+/* @yyc3/ui workspace 包的类名扫描源 */
+@source '../packages/ui/src';
+
 @custom-variant dark (&:is(.dark *));
 
 :root {

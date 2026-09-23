@@ -19,7 +19,7 @@ const eslintConfig = [
   {
     // vendored shadcn/ui 组件：保持与上游模板一致以便同步升级，
     // react-hooks v6 Compiler 对齐规则（set-state-in-effect / purity）在上游适配前降级为 warning。
-    files: ['components/ui/**/*.tsx'],
+    files: ['packages/ui/src/components/**/*.tsx'],
     rules: {
       'react-hooks/set-state-in-effect': 'warn',
       'react-hooks/purity': 'warn',

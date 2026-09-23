@@ -12,8 +12,8 @@
   },
   "aliases": {
     "components": "@/components",
-    "utils": "@/lib/utils",
-    "ui": "@/components/ui",
+    "utils": "@yyc3/ui/lib/utils",
+    "ui": "@yyc3/ui/components",
     "lib": "@/lib",
     "hooks": "@/hooks"
   },

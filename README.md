@@ -4,25 +4,26 @@
 
 # YYC³ Animation Robot
 
-[![Version](https://img.shields.io/badge/Version-0.2.0-6366f1?logo=semanticrelease&logoColor=white)](https://github.com/YYC-Cube/YYC3-Animation-Robot/blob/main/CHANGELOG.md)
-[![Next.js](https://img.shields.io/badge/Next.js-15.5-black?logo=nextdotjs&logoColor=white)](https://nextjs.org/docs)
+[![Version](https://img.shields.io/badge/Version-0.4.0-6366f1?logo=semanticrelease&logoColor=white)](https://github.com/YYC-Cube/YYC3-Animation-Robot/blob/main/CHANGELOG.md)
+[![Next.js](https://img.shields.io/badge/Next.js-16.3-black?logo=nextdotjs&logoColor=white)](https://nextjs.org/docs)
 [![React](https://img.shields.io/badge/React-19.3-087ea4?logo=react&logoColor=white)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9_strict-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4.3-06b6d4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/docs)
 [![Spline 3D](https://img.shields.io/badge/Spline_3D-4.1-ff5c77?logo=spline&logoColor=white)](https://spline.design)
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.43-e50e8a?logo=framer&logoColor=white)](https://motion.dev)
-[![pnpm](https://img.shields.io/badge/pnpm-10-F69220?logo=pnpm&logoColor=white)](https://pnpm.io)
+[![pnpm](https://img.shields.io/badge/pnpm-11-F69220?logo=pnpm&logoColor=white)](https://pnpm.io)
 [![Node.js](https://img.shields.io/badge/Node.js-22-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org)
 [![Type Check](https://img.shields.io/badge/TypeCheck-passing-brightgreen?logo=typescript&logoColor=white)](https://github.com/YYC-Cube/YYC3-Animation-Robot/actions)
 [![Lint](https://img.shields.io/badge/Lint-0_errors-brightgreen?logo=eslint&logoColor=white)](https://github.com/YYC-Cube/YYC3-Animation-Robot/actions)
 [![Build](https://img.shields.io/badge/Build-passing-brightgreen?logo=vercel&logoColor=white)](https://github.com/YYC-Cube/YYC3-Animation-Robot/actions)
+[![Tests](https://img.shields.io/badge/Tests-6+2_passing-brightgreen?logo=vitest&logoColor=white)](https://github.com/YYC-Cube/YYC3-Animation-Robot/actions)
 [![Code Style](https://img.shields.io/badge/Code_Style-Prettier-1a2b34?logo=prettier&logoColor=white)](https://prettier.io)
 [![License](https://img.shields.io/badge/License-Private--YYC%C2%B3-8A2BE2)](https://github.com/YYC-Cube/YYC3-Animation-Robot)
 
 > 言启千行代码，语枢万物智能
 > Words Initiate Quadrants, Language Serves as Core for Future
 
-`yyc3-animation-robot` — YanYuCloudCube™ (YYC³) 智能动画交互平台，基于 Next.js 15 + Spline 3D + Framer Motion 构建。承载品牌理念展示与技术栈验证的双重使命，是 YYC³ Family 智能应用体系的先导展示项目。
+`yyc3-animation-robot` — YanYuCloudCube™ (YYC³) 智能动画交互平台，基于 Next.js 16 + Spline 3D + Framer Motion 构建。承载品牌理念展示与技术栈验证的双重使命，是 YYC³ Family 智能应用体系的先导展示项目。
 
 ---
 
@@ -31,7 +32,7 @@
 | 属性 | 值 |
 | ---- | -- |
 | 项目名称 | `yyc3-animation-robot` |
-| 版本 | 0.3.0 |
+| 版本 | 0.4.0 |
 | 仓库 | <https://github.com/YYC-Cube/YYC3-Animation-Robot> |
 | 定位 | YYC³ Family 智能应用体系先导展示项目 |
 | 核心能力 | Spline 3D 实时交互 · Spotlight 视差光效 · 主题感知 · 58 组件库 |
@@ -42,8 +43,8 @@
 **核心使命**：
 
 1. **品牌理念展示** — 承载「言启象限 · 语枢未来」品牌理念的首屏交互体验
-2. **技术栈验证** — Next.js 15 + React 19 + Tailwind v4 + radix-ui 统一包的全链路落地验证
-3. **模板输出** — 58 个 shadcn/ui 组件与规范体系可供 YYC³ Family 项目复用
+2. **技术栈验证** — Next.js 16 + React 19 + Tailwind v4 + radix-ui 统一包的全链路落地验证
+3. **模板输出** — `@yyc3/ui` workspace 包 (59 组件) 可供 YYC³ Family 项目直接复用
 
 ---
 
@@ -51,17 +52,19 @@
 
 | 类别     | 技术                                       | 版本        |
 | -------- | ------------------------------------------ | ----------- |
-| 框架     | Next.js (App Router)                       | 15.5.25     |
+| 框架     | Next.js (App Router + cacheComponents)     | 16.3.5      |
 | UI 库    | React                                      | 19.3        |
 | 语言     | TypeScript (strict: true)                  | 5.9.3       |
-| 样式     | Tailwind CSS v4 (oklch) + shadcn/ui        | v4.3.3      |
+| 样式     | Tailwind CSS v4 (oklch) + @yyc3/ui         | v4.3.3      |
+| 组件库   | @yyc3/ui (workspace monorepo)              | 0.4.0       |
 | 基础组件 | radix-ui (统一包) + @base-ui/react         | ^1.6.7      |
 | 3D 引擎  | Spline (@splinetool/react-spline)          | 4.1.0       |
 | 动画     | Framer Motion                              | 12.43.0     |
 | 图标     | Lucide React                               | ^0.454.0    |
 | 主题     | next-themes (light/dark/system)            | ^0.4.6      |
 | 字体     | next/font (Geist / Playfair / EB Garamond) | 内置        |
-| 包管理   | pnpm                                       | 11.10.0     |
+| 测试     | vitest + @testing-library/react + Playwright | ^5.0 / ^1.63 |
+| 包管理   | pnpm (workspace)                           | 11.10.0     |
 | 运行时   | Node.js                                    | 22 (.nvmrc) |
 
 ---
@@ -94,6 +97,10 @@ pnpm dev
 | `pnpm start`        | 启动生产服务器 (端口 3011) |
 | `pnpm lint`         | 运行 ESLint 检查           |
 | `pnpm typecheck`    | 运行 TypeScript 类型检查   |
+| `pnpm test`         | 运行单元测试 (vitest)      |
+| `pnpm test:watch`   | 单测监听模式               |
+| `pnpm test:coverage`| 单测覆盖率报告             |
+| `pnpm test:e2e`     | 运行 E2e 冒烟测试 (Playwright) |
 | `pnpm format`       | 格式化代码 (Prettier)      |
 | `pnpm format:check` | 检查代码格式               |
 
@@ -104,34 +111,46 @@ pnpm dev
 ```text
 yyc3-animation-robot/
 ├── app/                        # Next.js App Router
-│   ├── globals.css             # 全局样式 (Tailwind v4 + oklch)
+│   ├── globals.css             # 全局样式 (Tailwind v4 + oklch + @source 包扫描)
 │   ├── layout.tsx              # 根布局 (字体/主题/Analytics)
 │   └── page.tsx                # 首页
 ├── components/
-│   ├── ui/                     # shadcn/ui 组件库 (58个)
 │   ├── error-boundary.tsx      # Spline 3D 错误边界
 │   ├── new-yorker-spline.tsx   # 主页面组件 (Spotlight + Spline)
 │   └── theme-provider.tsx      # 主题提供者 (next-themes)
+├── packages/                   # pnpm workspace
+│   └── ui/                     # @yyc3/ui 组件库 (0.4.0)
+│       └── src/
+│           ├── components/     # 59 个 shadcn/ui 组件 (源码直出)
+│           ├── hooks/          # use-mobile
+│           ├── lib/            # utils (cn)
+│           └── index.ts        # 统一出口
 ├── hooks/                      # 自定义 Hooks
-│   ├── use-mobile.ts           # 移动端检测
 │   └── use-toast.ts            # Toast 通知
-├── lib/
-│   └── utils.ts                # 工具函数 (cn)
+├── tests/                      # 测试基线
+│   ├── utils.test.ts           # cn 单测
+│   ├── button.test.tsx         # Button 单测
+│   └── e2e/home.spec.ts        # Playwright 冒烟
 ├── public/                     # 静态资源
 ├── docs/                       # 项目文档 (审核报告/规划方案)
 ├── YYC3-团队通用-标准规范/      # YYC³ 团队规范 + 文档引擎
+├── .github/workflows/          # CI 五连门禁 + Vercel Deploy
 ├── .editorconfig               # 编辑器配置 (UTF-8, LF, 2 spaces)
 ├── .env.example                # 环境变量模板
 ├── .gitignore                  # Git 忽略规则
 ├── .nvmrc                      # Node 版本锁定 (22)
 ├── .prettierrc                 # Prettier 配置
 ├── .prettierignore             # Prettier 忽略
-├── components.json             # shadcn/ui 配置 (new-york)
+├── components.json             # shadcn/ui 配置 (aliases → @yyc3/ui)
 ├── eslint.config.mjs           # ESLint 扁平配置
-├── next.config.mjs             # Next.js 配置 (strict TS)
+├── next.config.mjs             # Next.js 配置 (cacheComponents + transpilePackages)
 ├── package.json                # 项目依赖 (yyc3-animation-robot)
+├── playwright.config.ts        # Playwright E2e 配置
+├── pnpm-workspace.yaml         # workspace 声明 + 供应链策略
 ├── postcss.config.mjs          # PostCSS 配置
-├── tsconfig.json               # TypeScript 严格模式
+├── tsconfig.json               # TypeScript 严格模式 (@yyc3/ui/* 映射)
+├── vercel.json                 # Vercel 部署配置 (缓存头)
+├── vitest.config.ts            # vitest 单测配置 (jsdom + 覆盖率)
 ├── CHANGELOG.md                # 变更日志
 ├── CONTRIBUTING.md             # 贡献指南
 ├── README.md                   # 项目说明
@@ -150,13 +169,20 @@ yyc3-animation-robot/
 
 ---
 
-## 6. 组件库
+## 6. 组件库 (@yyc3/ui)
 
-基于 shadcn/ui (new-york 风格)，包含 58 个 UI 组件：
+pnpm workspace 包 (`packages/ui/`)，基于 shadcn/ui (new-york 风格)，**59 个 UI 组件源码直出**（Turbopack 直接编译，无构建产物）：
 
 `accordion` `alert` `alert-dialog` `aspect-ratio` `avatar` `badge` `breadcrumb` `button` `button-group` `calendar` `card` `carousel` `chart` `checkbox` `collapsible` `combobox` `command` `context-menu` `dialog` `direction` `drawer` `dropdown-menu` `empty` `field` `form` `hover-card` `input` `input-group` `input-otp` `item` `kbd` `label` `menubar` `native-select` `navigation-menu` `pagination` `popover` `progress` `radio-group` `resizable` `scroll-area` `select` `separator` `sheet` `sidebar` `skeleton` `slider` `sonner` `spinner` `switch` `table` `tabs` `textarea` `toggle` `toggle-group` `tooltip`
 
 自定义组件：`spotlight` (鼠标视差光效) `splite` (Spline 3D 懒加载 + Error Boundary) `toast` (通知类型声明)
+
+**消费方式**：
+
+```ts
+import { Button } from '@yyc3/ui/components/button'
+import { cn } from '@yyc3/ui/lib/utils'
+```
 
 ---
 
@@ -170,9 +196,10 @@ yyc3-animation-robot/
 
 ### 高性能 (High Performance)
 
-- Turbopack 默认构建引擎 (Next.js 16, 编译 398ms)
+- **Cache Components (PPR) 已启用** — 首页全静态预渲染 (3/3)，为动态内容分段缓存奠基
+- Turbopack 默认构建引擎 (Next.js 16)
 - Spline 3D 场景按需加载 (lazy + Suspense)
-- Tailwind CSS v4 按需构建 (oklch 色彩空间)
+- Tailwind CSS v4 按需构建 (oklch 色彩空间 + `@source` workspace 包扫描)
 - radix-ui 统一包替代 @radix-ui/react-\* 分包 (冗余依赖已清理)
 - react-resizable-panels v4 (API 升级)
 - 依赖树精简: 55 → 24 项直接依赖 (供应链攻击面收敛)
@@ -187,16 +214,22 @@ yyc3-animation-robot/
 
 ### 7.4 高扩展 (High Scalability)
 
-- shadcn/ui 58 组件 + CLI 按需扩展
-- YYC³ 复用模板体系 (54 组件可复用)
+- `@yyc3/ui` workspace 组件包 (59 组件) — YYC³ Family 项目以 `workspace:*` 直接复用
+- shadcn/ui CLI 按需扩展 (aliases 已对齐包路径)
 - ThemeProvider 支持多主题
-- 模块化组件架构 (components/ui/)
+- 模块化组件架构 (packages/ui/src/)
 
 ### 高智能 (High Intelligence)
 
 - 鼠标跟随视差光效 (Spotlight + Framer Motion)
 - 动态主题感知 (system preference + next-themes)
 - Spline 3D 场景实时交互
+
+### 质量与交付 (Quality & Delivery)
+
+- **测试基线**: vitest 单测 (jsdom + @testing-library/react) + Playwright E2e 冒烟，覆盖率门禁 lines/functions ≥ 60%
+- **CI 五连门禁**: Typecheck / Lint / Build / Unit tests / E2e smoke (`.github/workflows/ci.yml`)
+- **部署闭环**: `vercel.json` 缓存策略 + Vercel Deploy workflow (配置 `VERCEL_TOKEN`/`VERCEL_ORG_ID`/`VERCEL_PROJECT_ID` secrets 后自动生效)
 
 ---
 
@@ -210,7 +243,7 @@ yyc3-animation-robot/
 
 基于 2026 年行业大数据分析，本项目技术栈与以下趋势高度对齐：
 
-1. **Next.js 15 + AI-Ready 架构** — Gartner 2026 报告指出 75% 企业级前端代码已由 AI 辅助生成，Next.js App Router 是 AI 集成的首选架构
+1. **Next.js 16 + AI-Ready 架构** — Gartner 2026 报告指出 75% 企业级前端代码已由 AI 辅助生成，Next.js App Router 是 AI 集成的首选架构
 2. **Spline 3D + Web 交互** — AI 3D 生成市场预计从 2024 年 $2.5B 增长到 2033 年 $15.1B (CAGR 23.3%)
 3. **AI Agent 生态** — MCP (Model Context Protocol) 正成为 AI Agent 与工具连接的标准协议
 4. **多端部署** — PWA + Electron + 移动端适配成为企业级应用的标配能力
