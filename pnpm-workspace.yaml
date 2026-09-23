@@ -4,3 +4,9 @@ packages:
 allowBuilds:
   sharp: true
   unrs-resolver: false
+
+# 供应链策略：rolldown 1.2.10 (2026-09-23T13:27Z 发布) 触发 minimumReleaseAge 24h 拦截，
+# 通配 overrides 至合规的 1.2.9 (2026-09-16 发布)。1.2.10 过冷却期后移除本段。
+overrides:
+  rolldown: 1.2.9
+  "@rolldown/binding-*": 1.2.9
