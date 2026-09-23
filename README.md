@@ -4,7 +4,7 @@
 
 # YYC³ Animation Robot
 
-[![Version](https://img.shields.io/badge/Version-0.4.1-6366f1?logo=semanticrelease&logoColor=white)](https://github.com/YYC-Cube/YYC3-Animation-Robot/blob/main/CHANGELOG.md)
+[![Version](https://img.shields.io/badge/Version-0.4.2-6366f1?logo=semanticrelease&logoColor=white)](https://github.com/YYC-Cube/YYC3-Animation-Robot/blob/main/CHANGELOG.md)
 [![Next.js](https://img.shields.io/badge/Next.js-16.3-black?logo=nextdotjs&logoColor=white)](https://nextjs.org/docs)
 [![React](https://img.shields.io/badge/React-19.3-087ea4?logo=react&logoColor=white)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9_strict-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
@@ -32,7 +32,7 @@
 | 属性 | 值 |
 | ---- | -- |
 | 项目名称 | `yyc3-animation-robot` |
-| 版本 | 0.4.1 |
+| 版本 | 0.4.2 |
 | 仓库 | <https://github.com/YYC-Cube/YYC3-Animation-Robot> |
 | 定位 | YYC³ Family 智能应用体系先导展示项目 |
 | 核心能力 | Spline 3D 实时交互 · Spotlight 视差光效 · 主题感知 · 58 组件库 |
@@ -119,7 +119,7 @@ yyc3-animation-robot/
 │   ├── new-yorker-spline.tsx   # 主页面组件 (Spotlight + Spline)
 │   └── theme-provider.tsx      # 主题提供者 (next-themes)
 ├── packages/                   # pnpm workspace
-│   └── ui/                     # @yyc3/ui 组件库 (0.4.1)
+│   └── ui/                     # @yyc3/ui 组件库 (0.4.2)
 │       └── src/
 │           ├── components/     # 59 个 shadcn/ui 组件 (源码直出)
 │           ├── hooks/          # use-mobile
@@ -134,7 +134,7 @@ yyc3-animation-robot/
 ├── public/                     # 静态资源
 ├── docs/                       # 项目文档 (审核报告/规划方案)
 ├── YYC3-团队通用-标准规范/      # YYC³ 团队规范 + 文档引擎
-├── .github/workflows/          # CI 五连门禁 + Vercel Deploy
+├── .github/workflows/          # CI 五连门禁 + Pages 自动部署
 ├── .editorconfig               # 编辑器配置 (UTF-8, LF, 2 spaces)
 ├── .env.example                # 环境变量模板
 ├── .gitignore                  # Git 忽略规则

@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.4.2] - 2026-09-24
+
+### Added
+
+- **GitHub Pages 部署闭环** (自托管方案落地，替代已移除的 Vercel):
+  - `public/CNAME` (`robot.yyc3.top` 自定义域名) + `public/.nojekyll` (下划线目录路由保护)
+  - `.github/workflows/pages.yml`: 官方 actions (configure-pages → upload-pages-artifact → deploy-pages)，concurrency 自动取消中间态部署
+- **双模式构建** (`next.config.mjs` 按 `BUILD_MODE` 切换):
+  - 默认 (Node 自托管): `cacheComponents` 开启
+  - `build:export` (Pages 静态托管): `output: 'export'` + `trailingSlash`，产出 `out/`；cacheComponents (PPR) 与 export 互斥故自动禁用
+  - 新增依赖 `cross-env` 与脚本 `pnpm build:export`
+- 版本号 0.4.1 → 0.4.2 (主应用与 @yyc3/ui 同步)
+
+### Changed
+
+- README 快速开始/脚本表/结构图补充 `build:export` 与 Pages 部署说明
+
 ## [0.4.1] - 2026-09-24
 
 ### Added
