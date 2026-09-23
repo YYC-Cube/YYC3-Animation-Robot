@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 ## [0.4.1] - 2026-09-24
 
+### Added
+
+- **测试深化** (8 → 23 用例，vitest 21 + Playwright 2):
+  - `use-mobile` (5 用例): 桌面/移动断点判定、change 事件订阅同步、SSR 快照安全、卸载清理无泄漏
+  - `Spotlight` (5 用例): 父容器定位约束注入、hover 显隐、光斑跟随、pointer-events 防拦截、className 合并
+  - `ErrorBoundary` Spline 降级路径 (5 用例): 默认降级 UI、自定义 fallback 优先、重试复位、错误信息不外泄
+  - 测试文件统一显式 `afterEach(cleanup)`（vitest 非 globals 模式下 DOM 隔离）
+
 ### Removed
 
 - **彻底移除 Vercel 相关内容** (决策性移除，部署方案回归 CI 五连门禁 + 自托管可选):
@@ -11,11 +19,12 @@ All notable changes to this project will be documented in this file.
   - 移除 `@vercel/analytics` 依赖 (package.json + lockfile) 与 `app/layout.tsx` 中的 `<Analytics />` 注入
   - 清理 `.gitignore` 的 `.vercel` 条目与本地 `~/.vercel` 残留
   - README/图标可视化规范中 Build 徽章 logo 由 vercel 改为 githubactions，移除部署闭环段落与结构图条目
-- 版本号 0.4.0 → 0.4.1
 
 ### Changed
 
-- CI 保持五连门禁 (Typecheck / Lint / Build / Unit tests / E2e smoke) 作为唯一质量门禁，本地全量验证通过
+- 版本对齐: `@yyc3/ui` 0.4.0 → 0.4.1（与主应用同步）
+- CI 保持五连门禁 (Typecheck / Lint / Build / Unit tests / E2e smoke)，本地全量验证通过
+- 版本号 0.4.0 → 0.4.1；新增 git tag `v0.4.1`（仓库首个 tag）
 
 ## [0.4.0] - 2026-09-24
 

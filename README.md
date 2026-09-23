@@ -16,7 +16,7 @@
 [![Type Check](https://img.shields.io/badge/TypeCheck-passing-brightgreen?logo=typescript&logoColor=white)](https://github.com/YYC-Cube/YYC3-Animation-Robot/actions)
 [![Lint](https://img.shields.io/badge/Lint-0_errors-brightgreen?logo=eslint&logoColor=white)](https://github.com/YYC-Cube/YYC3-Animation-Robot/actions)
 [![Build](https://img.shields.io/badge/Build-passing-brightgreen?logo=githubactions&logoColor=white)](https://github.com/YYC-Cube/YYC3-Animation-Robot/actions)
-[![Tests](https://img.shields.io/badge/Tests-6+2_passing-brightgreen?logo=vitest&logoColor=white)](https://github.com/YYC-Cube/YYC3-Animation-Robot/actions)
+[![Tests](https://img.shields.io/badge/Tests-21+2_passing-brightgreen?logo=vitest&logoColor=white)](https://github.com/YYC-Cube/YYC3-Animation-Robot/actions)
 [![Code Style](https://img.shields.io/badge/Code_Style-Prettier-1a2b34?logo=prettier&logoColor=white)](https://prettier.io)
 [![License](https://img.shields.io/badge/License-Private--YYC%C2%B3-8A2BE2)](https://github.com/YYC-Cube/YYC3-Animation-Robot)
 
@@ -56,7 +56,7 @@
 | UI 库    | React                                      | 19.3        |
 | 语言     | TypeScript (strict: true)                  | 5.9.3       |
 | 样式     | Tailwind CSS v4 (oklch) + @yyc3/ui         | v4.3.3      |
-| 组件库   | @yyc3/ui (workspace monorepo)              | 0.4.0       |
+| 组件库   | @yyc3/ui (workspace monorepo)              | 0.4.1       |
 | 基础组件 | radix-ui (统一包) + @base-ui/react         | ^1.6.7      |
 | 3D 引擎  | Spline (@splinetool/react-spline)          | 4.1.0       |
 | 动画     | Framer Motion                              | 12.43.0     |
@@ -119,7 +119,7 @@ yyc3-animation-robot/
 │   ├── new-yorker-spline.tsx   # 主页面组件 (Spotlight + Spline)
 │   └── theme-provider.tsx      # 主题提供者 (next-themes)
 ├── packages/                   # pnpm workspace
-│   └── ui/                     # @yyc3/ui 组件库 (0.4.0)
+│   └── ui/                     # @yyc3/ui 组件库 (0.4.1)
 │       └── src/
 │           ├── components/     # 59 个 shadcn/ui 组件 (源码直出)
 │           ├── hooks/          # use-mobile
